@@ -23,7 +23,7 @@ export const config: AppConfig = {
   name: 'BadDog',
   icon: OmagizeIcon,
   inviteUrl:
-    'https://discord.com/api/oauth2/authorize?client_id=1120985542868336650&redirect_uri=https%3A%2F%2Fdiscord-bot-hehe.vercel.app%2F&response_type=code&scope=identify%20guilds%20email%20dm_channels.read',
+    'https://discord.com/api/oauth2/authorize?client_id=1120985542868336650&redirect_uri=https%3A%2F%2Fdiscord-bot-hehe.vercel.app%2F&response_type=code&scope=identify%20guilds%20guilds.join%20email',
   guild: {
     //filter guilds that user has no permissions to manage it
     filter: (guild) => (Number(guild.permissions) & PermissionFlags.ADMINISTRATOR) !== 0,
